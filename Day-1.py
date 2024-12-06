@@ -15,8 +15,15 @@ def compareLists(listA, listB):
     diff += abs(item1 - listB[index])
   return diff
 
+def findSimilar(listA, listB):
+  result = 0
+  for number in listA:
+    howMany = listB.count(number)
+    result += number * howMany
+  return result
 
 with open("Day-1.txt", "r") as file:
   a, b = splitInputIntoLists(file.read())
 
 print(compareLists(a, b))
+print(findSimilar(a,b))
