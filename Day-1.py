@@ -16,7 +16,7 @@ def compareLists(listA, listB):
   return diff
 
 
-with open("input.txt", "r") as file:
+with open("Day-1.txt", "r") as file:
   a, b = splitInputIntoLists(file.read())
 
 print(compareLists(a, b))
